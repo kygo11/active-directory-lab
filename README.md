@@ -1,6 +1,6 @@
 # Active Directory Home Lab - Windows Server 2022
 
-A Windows domain environment built from scratch using VMware Fusion. A Windows Server 2022 domain controller runs Active Directory, DHCP, DNS, and RAS/NAT, and a Windows 10 client is joined to the domain. 150 user accounts across multiple Organizational Units were provisioned automatically with PowerShell.
+A Windows domain environment built using VMware Fusion. A Windows Server 2022 domain controller runs Active Directory, DHCP, DNS, and RAS/NAT, and a Windows 10 client is joined to the domain. 150 user accounts across multiple Organizational Units were provisioned automatically with PowerShell.
 
 # Architecture
 
