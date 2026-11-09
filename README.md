@@ -4,7 +4,7 @@ A Windows domain environment built using VMware Fusion. A Windows Server 2022 do
 
 # Architecture
 
-Network diagram
+![Network diagram](network-diagram.png)
 - Domain Controller - Windows Server 2022 (dual-homed): one NIC to the internet, one NIC to the private lab network.
 - Client1 - Windows 10: single NIC on the private lab network, joined to the domain.
 - Both VMs run in VMware Fusion on a custom internal network (172.16.0.0/24).
@@ -46,6 +46,37 @@ Network diagram
 - DNS/DHCP/NAT networking
 - PowerShell scripting
 - Network troubleshooting
+
+## Screenshots
+
+### Server roles installed
+Server Manager showing all roles — AD DS, DNS, DHCP, and Remote Access (RAS/NAT).
+
+![Server Manager roles](server-manager-roles.png)
+
+### Organizational Units and users
+Active Directory Users and Computers showing the OUs (HR, IT, Management, Marketing, Sales) and the created user accounts.
+
+![Active Directory Users and Computers](ad-ou-users.png)
+
+### DHCP scope
+The DHCP scope with its `172.16.0.100–200` address pool on the lab network.
+
+![DHCP scope](dhcp-scope.png)
+
+The DHCP address leases.
+
+![DHCP scope](dhcp-address-leases.png)
+
+### Client network configuration
+`ipconfig /all` on the client, signed in as domain user `acarron` showing a DHCP-assigned `172.16.0.x` address, the DC (`172.16.0.10`) as both DHCP and DNS server.
+
+![Client ipconfig /all](ipconfig-client.png)
+
+### Client joined to the domain
+Shows the full device name `CLIENT1.mydomain.com` confirming domain membership.
+
+![Client joined to the domain](client-joined-domain.png)
 
 
 
