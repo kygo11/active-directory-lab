@@ -78,6 +78,10 @@ Shows the full device name `CLIENT1.mydomain.com` confirming domain membership.
 
 ![Client joined to the domain](client-joined-domain.png)
 
+## Automation
+
+[`Bulk-Users-Script.ps1`](Bulk-Users-Script.ps1) - a PowerShell script that bulk-creates 150+ users and 5 Organizational Units from a CSV.
+
 
 
 
